@@ -61,7 +61,6 @@ function Timer(Element, Time, Name) {
     clearInterval(interval);
     isPaused = true;
     time = 0; //originalTime;
-    $("#status").html("<h2>Game Over!</h2>");
     $("#status").show();
   }
 }
@@ -114,4 +113,7 @@ var timers = new Timers(document.getElementsByClassName("timer-container")[0]);
 $(document).ready(function() {
   console.log("-- starting the party --");
   $("#status").hide();
+  $("#start-game-but").click(function() {
+    location.reload();
+  });
 });
