@@ -4,7 +4,9 @@
 
 ### The best and easiest way to play Settlers Of Catan in a limited time and have fun!
 
-### TODO
+## [Try it!](https://greenido.github.io/settlers-timer/)
+
+## TODO
 1. Set is as a PWA so it could be used without network.
 2. Add CSS framework for better dialogs.
 3. Add FAQ / Readme to the page.
