@@ -48,7 +48,6 @@ function Timer(Element, Time, Name) {
     } else {
       clearInterval(interval);
     }
-
     isPaused = !isPaused;
   }
 
@@ -69,11 +68,16 @@ function Timer(Element, Time, Name) {
 //
 //
 function Timers(Element) {
-  var timers = [],
-    element = Element;
-
+  var timers = [];
+  var element = Element;
 
   this.addTimer = function () {
+    if (timers.length >= 4) {
+      return;
+    }
+    else if (timers.length == 3) {
+      $(".add-timer").hide();
+    }
     var name = prompt("Player Name");
     var time = prompt("The length of your timer in seconds (e.g. 15min * 60sec = 900)");
 
@@ -84,7 +88,6 @@ function Timers(Element) {
     }
 
     time = Math.floor(time) || 10 * 60;
-
     var timerElement = document.createElement("div");
     timerElement.classList.add("timer");
 
@@ -95,9 +98,7 @@ function Timers(Element) {
     var timeElement = document.createElement("div");
     timeElement.classList.add("time");
     timerElement.appendChild(timeElement);
-
     element.appendChild(timerElement);
-
     timers.push(new Timer(timerElement, time, name));
   }
 
