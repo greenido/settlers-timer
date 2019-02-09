@@ -24,8 +24,8 @@ img {
 
 .timer,
 .add-timer {
-  width: 12em;
-  height: 13em;
+  width: 38%;
+  height: 24%;
   border: 2px solid rgb(236, 90, 48);
   margin: .5em;
 }
@@ -35,16 +35,18 @@ img {
   border-color: #F5F5F5;
   cursor: pointer;
   text-align: center;
-  background-image: url("imgs/settlers-bg.png");
+  background-image: url("imgs/settlers-board-.jpg");
   /* background:  linear-gradient(to bottom, rgba(236, 90, 48, 0.42) 0%, rgb(234, 71, 25) 100%);*/
   border-radius: 1em;
+  width: 38%;
+  height: 24%;
 }
 
 
 .add-timer>*:first-child {
   color: #F5F5F5;
   font-size: 6em;
-  line-height: 2.125em;
+  line-height: 2.3em;
   height: 100%;
   opacity: 0.9;
 }
@@ -68,13 +70,13 @@ img {
 
 .timer>.time {
   display: block;
-  height: calc(3.5em + 2px);
+  /*height: calc(3.5em + 2px);*/
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  line-height: 3.5em;
-  font-size: 3em;
+  line-height: 2.5em;
+  font-size: 5em;
   color: #2B2B2B;
-  background: linear-gradient(to bottom, rgb(245, 245, 245) 0%, rgb(242, 242, 242) 100%);
+  /*background: linear-gradient(to bottom, rgb(245, 245, 245) 0%, rgb(242, 242, 242) 100%);*/
   cursor: pointer;
 }
 
@@ -94,7 +96,7 @@ div#status {
   margin: auto;
   padding: 1em;
   border-radius: 1em;
-  width: 40%;
+  width: 38%;
   font-size: 160%;
 }
 

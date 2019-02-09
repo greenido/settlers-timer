@@ -28,8 +28,8 @@ function Timer(Element, Time, Name) {
   }
 
   function timeCallBack() {
-    if (time === 0) {
-      onEnd();
+    if (time <= 0) {
+      onEnd(getNameElement());
     }
 
     var minutes = Math.floor(time / 60);
@@ -54,7 +54,7 @@ function Timer(Element, Time, Name) {
   //
   //
   //
-  function onEnd() {
+  function onEnd(name) {
     myAudio.play();
     document.body.style.backgroundColor = "red";
     clearInterval(interval);
