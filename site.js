@@ -56,7 +56,7 @@ function Timer(Element, Time, Name) {
   //
   function onEnd(name) {
     myAudio.play();
-    document.body.style.backgroundColor = "red";
+    //document.body.style.backgroundColor = "red";
     clearInterval(interval);
     isPaused = true;
     time = 0; //originalTime;
