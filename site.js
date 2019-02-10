@@ -64,7 +64,7 @@ function Timer(Element, Time, Name) {
                 "<h2>😜 You will win on the next game!</h2>"];
     let curMsg = msgs[Math.floor(Math.random() * msgs.length)];
 
-    $("#status").append(curMsg + "<p>"+ name.innerText + " is out of the game!</p>");
+    $("#status").append(curMsg + "<h3>"+ name.innerText + " is out of the game!</h3>");
     $("#status").show();
     setTimeout(function() {
       $("#status").hide();
