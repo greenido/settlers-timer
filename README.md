@@ -9,5 +9,6 @@
 ## TODO
 1. Set is as a PWA so it could be used without network.
 2. Add CSS framework for better dialogs.
-3. Add FAQ / Readme to the page.
+3. Use media-queries in the css for the images (desktop/mobile)
+4. Add FAQ / Readme to the page.
 
