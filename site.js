@@ -66,9 +66,9 @@ function Timer(Element, Time, Name) {
 
     $("#status").append(curMsg + "<h3>"+ name.innerText + " is out of the game!</h3>");
     $("#status").show();
-    setTimeout(function() {
-      $("#status").hide();
-    }, 3000)
+    // setTimeout(function() {
+    //   $("#status").hide();
+    // }, 3000)
   }
 }
 
@@ -122,15 +122,20 @@ var timers = new Timers(document.getElementsByClassName("timer-container")[0]);
 $(document).ready(function() {
   console.log("-- starting the party --");
   $("#status").hide();
+  $("#help-area").hide();
+
+  // Button to let users restart everything
   $("#start-game-but").click(function() {
     location.reload();
   });
 
   // The 'help' dialog
   $(".help-icon").click(function () {
-    $("#status").show();
+    $("#help-area").show();
   });
+
   $(".close-but").click(function() {
+    $("#help-area").hide();
     $("#status").hide();
   });
 });

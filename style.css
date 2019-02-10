@@ -51,8 +51,6 @@ img {
 }
 
 .close-but {
-  /* position: relative;
-  right: -32%; */
   font-size: 4em;
 }
 .help-text {
@@ -77,7 +75,7 @@ img {
   height: 1.5em;
   text-align: center;
   color: #F5F5F5;
-  font-size: 1.5em;
+  font-size: 3.5em;
   line-height: 1.5em;
   font-family: 'Lora', serif;
   background: linear-gradient(to bottom, rgba(198, 236, 48, 0.45) 0%, rgb(234, 25, 25) 100%);
@@ -129,4 +127,12 @@ button#start-game-but {
   padding: 1em;
   font-size: 120%;
   font-weight: bolder;
+}
+
+#help-area {
+  background-color: #ffff0047;
+  margin: auto;
+  padding: 1em;
+  border-radius: 1em;
+  width: 70%;
 }
