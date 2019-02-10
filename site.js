@@ -130,6 +130,6 @@ $(document).ready(function() {
     $("#status").show();
     setTimeout(function() {
       $("#status").hide();
-    }, 3000)
+    }, 6000)
   });
 });
