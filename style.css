@@ -80,7 +80,7 @@ img {
   font-size: 1.5em;
   line-height: 1.5em;
   font-family: 'Lora', serif;
-  background: linear-gradient(to bottom, rgb(236, 90, 48) 0%, rgb(234, 71, 25) 100%);
+  background: linear-gradient(to bottom, rgba(198, 236, 48, 0.45) 0%, rgb(234, 25, 25) 100%);
 }
 
 .timer>.time {
@@ -107,7 +107,7 @@ h1 {
 
 div#status {
   text-align: center;
-  background-color: yellow;
+  background-color: #ffff0047;
   margin: auto;
   padding: 1em;
   border-radius: 1em;
