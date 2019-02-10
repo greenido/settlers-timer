@@ -95,6 +95,7 @@ img {
 
 .timer>.time:hover {
   background-color: rgba(20, 20, 20, 0.7);
+  height: 2em;
 }
 
 h1 {
