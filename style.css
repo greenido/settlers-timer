@@ -117,6 +117,8 @@ div#status {
 
 footer {
   text-align: center;  
+  font-size: 150%;
+  line-height: 1.5em;
   margin: auto;
   padding: 1em;
   border-radius: 1em;
