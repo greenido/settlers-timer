@@ -60,7 +60,15 @@ function Timer(Element, Time, Name) {
     clearInterval(interval);
     isPaused = true;
     time = 0; //originalTime;
+    let msgs = ["<h2>🤠 Almost Mate! Don't give up...</h2>", "<h2>😉 Get them next time!</h2>", "<h2>😎 It's all about having fun</h2>",
+                "<h2>😜 You will win on the next game!</h2>"];
+    let curMsg = msgs[Math.floor(Math.random() * msgs.length)];
+
+    $("#status").append(curMsg + "<p>"+ name.innerText + " is out of the game!</p>");
     $("#status").show();
+    setTimeout(function() {
+      $("#status").hide();
+    }, 3000)
   }
 }
 
@@ -116,5 +124,12 @@ $(document).ready(function() {
   $("#status").hide();
   $("#start-game-but").click(function() {
     location.reload();
+  });
+
+  $(".help-icon").click(function () {
+    $("#status").show();
+    setTimeout(function() {
+      $("#status").hide();
+    }, 3000)
   });
 });

@@ -42,6 +42,13 @@ img {
   height: 24%;
 }
 
+.help-icon {
+  color: #F5F5F5;
+  font-size: 6em;
+  position: absolute;
+  right: 0.1em;
+  opacity: 0.9;
+}
 
 .add-timer>*:first-child {
   color: #F5F5F5;
@@ -85,7 +92,7 @@ img {
 }
 
 h1 {
-  text-align: center;
+  /*text-align: center;*/
   font-size: 280%;
   padding-top: 0.8em;
 }
