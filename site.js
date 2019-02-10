@@ -126,10 +126,11 @@ $(document).ready(function() {
     location.reload();
   });
 
+  // The 'help' dialog
   $(".help-icon").click(function () {
     $("#status").show();
-    setTimeout(function() {
-      $("#status").hide();
-    }, 6000)
+  });
+  $(".close-but").click(function() {
+    $("#status").hide();
   });
 });

@@ -50,6 +50,14 @@ img {
   opacity: 0.9;
 }
 
+.close-but {
+  /* position: relative;
+  right: -32%; */
+  font-size: 4em;
+}
+.help-text {
+  font-size: 125%;
+}
 .add-timer>*:first-child {
   color: #F5F5F5;
   font-size: 6em;
@@ -117,5 +125,6 @@ footer {
 
 button#start-game-but {
   padding: 1em;
-  font-size: 110%;
+  font-size: 120%;
+  font-weight: bolder;
 }
